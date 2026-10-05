@@ -1,0 +1,27 @@
+<svg width="960" height="300" viewBox="0 0 960 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#101B2D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="64" y1="46" x2="164" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="300" rx="18" fill="url(#bg)"/>
+  <rect x="1" y="1" width="958" height="298" rx="17" stroke="#26364D" stroke-width="2"/>
+  <circle cx="92" cy="96" r="48" fill="#10B981" fill-opacity="0.14"/>
+  <path d="M92 58L126 70V96C126 119 112 137 92 146C72 137 58 119 58 96V70L92 58Z" fill="url(#accent)"/>
+  <path d="M75 96L87 108L111 82" stroke="#06251B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="164" y="78" fill="#9CAFC7" font-family="Inter, Arial, sans-serif" font-size="15" letter-spacing="1.8">PREVIOUS RELEASE VERIFICATION</text>
+  <text x="164" y="116" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="700">VirusTotal scan summary</text>
+  <text x="164" y="148" fill="#A8B8CC" font-family="Inter, Arial, sans-serif" font-size="17">No security vendors flagged the Node Agent archive</text>
+  <rect x="666" y="55" width="224" height="118" rx="14" fill="#102D29" stroke="#1F8B68"/>
+  <text x="778" y="91" text-anchor="middle" fill="#86EFAC" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600">DETECTION RESULT</text>
+  <text x="778" y="137" text-anchor="middle" fill="#F0FDF4" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="800">0 / 65</text>
+  <text x="778" y="160" text-anchor="middle" fill="#A7F3D0" font-family="Inter, Arial, sans-serif" font-size="13">vendors flagged</text>
+  <line x1="64" y1="211" x2="896" y2="211" stroke="#26364D"/>
+  <text x="64" y="246" fill="#7388A3" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">v4.0 · wizzhosting-node-agent-2026-10-05.zip</text>
+  <text x="896" y="246" text-anchor="end" fill="#7388A3" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14">SHA-256 verified</text>
+</svg>

@@ -1,0 +1,10 @@
+{
+  "name": "cubeforge-node-agent",
+  "version": "5.0.0",
+  "description": "CubeForge Node Agent v5 - runs Minecraft server processes on your computer",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  }
+}

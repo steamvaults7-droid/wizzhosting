@@ -1,0 +1,7 @@
+[functions.node-api]
+verify_jwt = false
+entrypoint = "./functions/node-api/index.ts"
+
+[functions.node-files]
+verify_jwt = true
+entrypoint = "./functions/node-files/index.ts"

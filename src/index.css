@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Midnight Navy + Electric Violet */
+    --background: 230 35% 6%;         /* #080B18 */
+    --foreground: 220 20% 96%;        /* #F5F7FF */
+    --card: 228 33% 9%;               /* #0B1020 */
+    --card-foreground: 220 20% 96%;
+    --popover: 228 33% 9%;
+    --popover-foreground: 220 20% 96%;
+    --primary: 258 90% 66%;           /* #8B5CF6 electric violet */
+    --primary-foreground: 220 20% 98%;
+    --secondary: 225 28% 14%;         /* #11172A */
+    --secondary-foreground: 220 20% 90%;
+    --muted: 225 28% 14%;
+    --muted-foreground: 220 10% 55%;  /* #94A3B8-ish */
+    --accent: 225 24% 18%;            /* #171D32 */
+    --accent-foreground: 220 20% 90%;
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 142 70% 45%;
+    --success-foreground: 142 70% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 92% 98%;
+    --border: 225 20% 16%;
+    --input: 225 20% 16%;
+    --ring: 258 90% 66%;
+    --radius: 0.6rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  ::selection {
+    background-color: hsl(var(--primary) / 0.3);
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--border));
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--muted-foreground) / 0.5);
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(258 90% 66%), hsl(280 80% 70%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(225 20% 16% / 0.35) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(225 20% 16% / 0.35) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .bg-dot {
+    background-image: radial-gradient(hsl(225 20% 18% / 0.4) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+  .violet-glow {
+    box-shadow: 0 0 40px -10px hsl(258 90% 66% / 0.3);
+  }
+}
